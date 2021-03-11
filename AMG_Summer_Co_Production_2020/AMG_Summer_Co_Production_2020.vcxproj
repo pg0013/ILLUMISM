@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="script\BOSS\BOSS.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_Appear.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_CENTER.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_Crosslaser.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_Destroy.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_Fallattack.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_Groundattack.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_Hit.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_Laserattack.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_LEFT.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_Move.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_RIGHT.cpp" />
+    <ClCompile Include="script\BOSS\BOSS_Simplelaser.cpp" />
+    <ClCompile Include="script\BOSS\CrossLaser.cpp" />
+    <ClCompile Include="script\BOSS\FallAttack.cpp" />
+    <ClCompile Include="script\BOSS\GroundAttack.cpp" />
+    <ClCompile Include="script\BOSS\LaserAttack.cpp" />
+    <ClCompile Include="script\Controller\CoopMoveController.cpp" />
+    <ClCompile Include="script\Controller\GameUIController.cpp" />
+    <ClCompile Include="script\Controller\PlayerUIController.cpp" />
+    <ClCompile Include="script\Controller\SpotlightController.cpp" />
+    <ClCompile Include="script\Controller\TouchObjectController.cpp" />
+    <ClCompile Include="script\Effect\easing.cpp" />
+    <ClCompile Include="script\Effect\EffectComponent.cpp" />
+    <ClCompile Include="script\Effect\GroundParticle.cpp" />
+    <ClCompile Include="script\Effect\HitEffect.cpp" />
+    <ClCompile Include="script\Effect\LandingParticle.cpp" />
+    <ClCompile Include="script\Effect\Particle.cpp" />
+    <ClCompile Include="script\Effect\TouchParticle.cpp" />
+    <ClCompile Include="script\Effect\TouchSuccessEffect.cpp" />
+    <ClCompile Include="script\Game.cpp" />
+    <ClCompile Include="script\main.cpp" />
+    <ClCompile Include="script\Mode\ModeBase.cpp" />
+    <ClCompile Include="script\Mode\ModeCredit.cpp" />
+    <ClCompile Include="script\Mode\ModeGame.cpp" />
+    <ClCompile Include="script\Mode\ModeLogo.cpp" />
+    <ClCompile Include="script\Mode\ModeMainMenu.cpp" />
+    <ClCompile Include="script\Mode\ModeOperation.cpp" />
+    <ClCompile Include="script\Mode\ModeOverlay.cpp" />
+    <ClCompile Include="script\Mode\ModeResult.cpp" />
+    <ClCompile Include="script\Mode\ModeScoreBonus.cpp" />
+    <ClCompile Include="script\Mode\ModeSelectChara.cpp" />
+    <ClCompile Include="script\Mode\ModeTitle.cpp" />
+    <ClCompile Include="script\Mode\ModeTutorial.cpp" />
+    <ClCompile Include="script\Object\BackGround.cpp" />
+    <ClCompile Include="script\Object\Bullet.cpp" />
+    <ClCompile Include="script\Object\Camera.cpp" />
+    <ClCompile Include="script\Object\CoopMoveObject.cpp" />
+    <ClCompile Include="script\Object\ObjectBase.cpp" />
+    <ClCompile Include="script\Object\PointObject.cpp" />
+    <ClCompile Include="script\Object\Spotlight.cpp" />
+    <ClCompile Include="script\Object\SpotLightHit.cpp" />
+    <ClCompile Include="script\Object\TouchObject.cpp" />
+    <ClCompile Include="script\Player\Attack.cpp" />
+    <ClCompile Include="script\Player\Player.cpp" />
+    <ClCompile Include="script\Player\Player_Appeal.cpp" />
+    <ClCompile Include="script\Player\Player_Appear.cpp" />
+    <ClCompile Include="script\Player\Player_Attack.cpp" />
+    <ClCompile Include="script\Player\Player_Damage.cpp" />
+    <ClCompile Include="script\Player\Player_Fly.cpp" />
+    <ClCompile Include="script\Player\Player_Hit.cpp" />
+    <ClCompile Include="script\Player\Player_Jump.cpp" />
+    <ClCompile Include="script\Player\Player_Move.cpp" />
+    <ClCompile Include="script\Player\Player_Respawn.cpp" />
+    <ClCompile Include="script\Player\Player_Shoot.cpp" />
+    <ClCompile Include="script\Player\Player_SPMove.cpp" />
+    <ClCompile Include="script\Player\Player_Touch.cpp" />
+    <ClCompile Include="script\Player\SPMove.cpp" />
+    <ClCompile Include="script\Server\ModeServer.cpp" />
+    <ClCompile Include="script\Server\ObjectServer.cpp" />
+    <ClCompile Include="script\Server\ResourceServer.cpp" />
+    <ClCompile Include="script\Sound\MyFadeXAPO.cpp" />
+    <ClCompile Include="script\Sound\MyHighPassFilter.cpp" />
+    <ClCompile Include="script\Sound\MyLowPassFilterXAPO.cpp" />
+    <ClCompile Include="script\Sound\MyPeakMeterXAPO.cpp" />
+    <ClCompile Include="script\Sound\MyStereoDownMixXAPO.cpp" />
+    <ClCompile Include="script\Sound\PlayWAVE.cpp" />
+    <ClCompile Include="script\Sound\WAVEReader.cpp" />
+    <ClCompile Include="script\UI\BonusPoint.cpp" />
+    <ClCompile Include="script\UI\Combo.cpp" />
+    <ClCompile Include="script\UI\Flybar_UI.cpp" />
+    <ClCompile Include="script\UI\GameSign.cpp" />
+    <ClCompile Include="script\UI\HPbar_UI.cpp" />
+    <ClCompile Include="script\UI\PointNumber_UI.cpp" />
+    <ClCompile Include="script\UI\ResultPoint.cpp" />
+    <ClCompile Include="script\UI\SPmove_UI.cpp" />
+    <ClCompile Include="script\UI\Time_UI.cpp" />
+    <ClCompile Include="script\Utility\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="script\BOSS\BOSS.h" />
+    <ClInclude Include="script\BOSS\BOSS_CENTER.h" />
+    <ClInclude Include="script\BOSS\BOSS_LEFT.h" />
+    <ClInclude Include="script\BOSS\BOSS_RIGHT.h" />
+    <ClInclude Include="script\BOSS\CrossLaser.h" />
+    <ClInclude Include="script\BOSS\FallAttack.h" />
+    <ClInclude Include="script\BOSS\GroundAttack.h" />
+    <ClInclude Include="script\BOSS\LaserAttack.h" />
+    <ClInclude Include="script\Controller\CoopMoveController.h" />
+    <ClInclude Include="script\Controller\GameUIController.h" />
+    <ClInclude Include="script\Controller\PlayerUIController.h" />
+    <ClInclude Include="script\Controller\SpotlightController.h" />
+    <ClInclude Include="script\Controller\TouchObjectController.h" />
+    <ClInclude Include="script\Effect\easing.h" />
+    <ClInclude Include="script\Effect\EffectComponent.h" />
+    <ClInclude Include="script\Effect\GroundParticle.h" />
+    <ClInclude Include="script\Effect\HitEffect.h" />
+    <ClInclude Include="script\Effect\LandingParticle.h" />
+    <ClInclude Include="script\Effect\Particle.h" />
+    <ClInclude Include="script\Effect\TouchParticle.h" />
+    <ClInclude Include="script\Effect\TouchSuccessEffect.h" />
+    <ClInclude Include="script\Game.h" />
+    <ClInclude Include="script\Mode\ModeBase.h" />
+    <ClInclude Include="script\Mode\ModeCredit.h" />
+    <ClInclude Include="script\Mode\ModeGame.h" />
+    <ClInclude Include="script\Mode\ModeLogo.h" />
+    <ClInclude Include="script\Mode\ModeMainMenu.h" />
+    <ClInclude Include="script\Mode\ModeOperation.h" />
+    <ClInclude Include="script\Mode\ModeOverlay.h" />
+    <ClInclude Include="script\Mode\ModeResult.h" />
+    <ClInclude Include="script\Mode\ModeScoreBonus.h" />
+    <ClInclude Include="script\Mode\ModeSelectChara.h" />
+    <ClInclude Include="script\Mode\ModeTitle.h" />
+    <ClInclude Include="script\Mode\ModeTutorial.h" />
+    <ClInclude Include="script\Object\BackGround.h" />
+    <ClInclude Include="script\Object\Bullet.h" />
+    <ClInclude Include="script\Object\Camera.h" />
+    <ClInclude Include="script\Object\CoopMoveObject.h" />
+    <ClInclude Include="script\Object\ObjectBase.h" />
+    <ClInclude Include="script\Object\PointObject.h" />
+    <ClInclude Include="script\Object\Spotlight.h" />
+    <ClInclude Include="script\Object\SpotLightHit.h" />
+    <ClInclude Include="script\Object\TouchObject.h" />
+    <ClInclude Include="script\Player\Attack.h" />
+    <ClInclude Include="script\Player\Player.h" />
+    <ClInclude Include="script\Player\SPMove.h" />
+    <ClInclude Include="script\Server\ModeServer.h" />
+    <ClInclude Include="script\Server\ObjectServer.h" />
+    <ClInclude Include="script\Server\ResourceServer.h" />
+    <ClInclude Include="script\Sound\MyFadeXAPO.h" />
+    <ClInclude Include="script\Sound\MyHighPassFilter.h" />
+    <ClInclude Include="script\Sound\MyLowPassFilterXAPO.h" />
+    <ClInclude Include="script\Sound\MyPeakMeterXAPO.h" />
+    <ClInclude Include="script\Sound\MyStereoDownMixXAPO.h" />
+    <ClInclude Include="script\Sound\PlayWAVE.h" />
+    <ClInclude Include="script\Sound\WAVEReader.h" />
+    <ClInclude Include="script\UI\BonusPoint.h" />
+    <ClInclude Include="script\UI\Combo.h" />
+    <ClInclude Include="script\UI\Flybar_UI.h" />
+    <ClInclude Include="script\UI\GameSign.h" />
+    <ClInclude Include="script\UI\HPbar_UI.h" />
+    <ClInclude Include="script\UI\PointNumber_UI.h" />
+    <ClInclude Include="script\UI\ResultPoint.h" />
+    <ClInclude Include="script\UI\SPmove_UI.h" />
+    <ClInclude Include="script\UI\Time_UI.h" />
+    <ClInclude Include="script\Utility\Utility.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{0736F4EE-898F-4189-9A6B-5A5D7CC70C59}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AMGSummerCoProduction2020</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)プロジェクトに追加すべきファイル_VC用;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)プロジェクトに追加すべきファイル_VC用;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)プロジェクトに追加すべきファイル_VC用;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)プロジェクトに追加すべきファイル_VC用;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)プロジェクトに追加すべきファイル_VC用;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)プロジェクトに追加すべきファイル_VC用;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)プロジェクトに追加すべきファイル_VC用;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)プロジェクトに追加すべきファイル_VC用;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

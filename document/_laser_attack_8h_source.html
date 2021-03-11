@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ILLUMISM: LaserAttack.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ILLUMISM
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_laser_attack_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">LaserAttack.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_laser_attack_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_object_base_8h.html">ObjectBase.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&quot;DxLib.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>illumism</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classillumism_1_1_laser_attack.html">   20</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classillumism_1_1_laser_attack.html">LaserAttack</a> : <span class="keyword">public</span> <a class="code" href="classillumism_1_1_object_base.html">ObjectBase</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classillumism_1_1_laser_attack.html#a5cb993f23bfc0be527455da662452758">LaserAttack</a>(<span class="keywordtype">int</span> _x, <span class="keywordtype">int</span> _y, <span class="keywordtype">int</span> _taget_x, <span class="keywordtype">int</span> _target_y, <span class="keywordtype">int</span> _speed);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        ~<a class="code" href="classillumism_1_1_laser_attack.html">LaserAttack</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classillumism_1_1_laser_attack.html#a86a205f90bfb433d8541b1ae4f1a6d87">   45</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classillumism_1_1_object_base.html#a474a7f4347c7057767b376bca2df2a52">OBJECT_TYPE</a> <a class="code" href="classillumism_1_1_laser_attack.html#a86a205f90bfb433d8541b1ae4f1a6d87">GetType</a>() { <span class="keywordflow">return</span> ObjectBase::OBJECT_TYPE::LASER; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classillumism_1_1_laser_attack.html#a813efa6f985835433ec4712dc3d51996">Init</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classillumism_1_1_laser_attack.html#a195f35fbc9c6595c0f42f324c210c742">Process</a>(<a class="code" href="classillumism_1_1_game.html">Game</a>&amp; _game);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classillumism_1_1_laser_attack.html#a2081e30ae896e3017b3d1b497bb859d9">Damage</a>(<a class="code" href="classillumism_1_1_game.html">Game</a>&amp; _game);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classillumism_1_1_laser_attack.html#a8a8f9e7ddd58f94fc0447ad9e226f599">Draw</a>(<a class="code" href="classillumism_1_1_game.html">Game</a>&amp; _game) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classillumism_1_1_laser_attack.html#a1b5a9cfb7056708512b4569b48ecc262">Hit</a>(<a class="code" href="classillumism_1_1_game.html">Game</a>&amp; _game);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classillumism_1_1_laser_attack.html#a63e584b91e113cca49cb213909f007d6">IsHitToCircle</a>(<a class="code" href="classillumism_1_1_object_base.html">ObjectBase</a>&amp; _object);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classillumism_1_1_laser_attack.html#a5911828678c2550b6721bcef2e4dbf01">OffScreen</a>(<a class="code" href="classillumism_1_1_game.html">Game</a>&amp; _game);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        VECTOR target;  </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        VECTOR position;    </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">float</span> m_speed_x, m_speed_y;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordtype">double</span> e_x, e_y;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordtype">double</span> m_angle;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">int</span> hit_r[3];   </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">int</span> hit_cx[3];</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">int</span> hit_cy[3];</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    };</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="ttc" id="a_object_base_8h_html"><div class="ttname"><a href="_object_base_8h.html">ObjectBase.h</a></div><div class="ttdoc">**オブジェクトの基底クラス</div></div>
+<div class="ttc" id="aclassillumism_1_1_game_html"><div class="ttname"><a href="classillumism_1_1_game.html">illumism::Game</a></div><div class="ttdoc">ゲームシーンクラス</div><div class="ttdef"><b>Definition:</b> Game.h:76</div></div>
+<div class="ttc" id="aclassillumism_1_1_laser_attack_html"><div class="ttname"><a href="classillumism_1_1_laser_attack.html">illumism::LaserAttack</a></div><div class="ttdoc">プレイヤーに向かうレーザー攻撃を行うクラス</div><div class="ttdef"><b>Definition:</b> LaserAttack.h:21</div></div>
+<div class="ttc" id="aclassillumism_1_1_laser_attack_html_a195f35fbc9c6595c0f42f324c210c742"><div class="ttname"><a href="classillumism_1_1_laser_attack.html#a195f35fbc9c6595c0f42f324c210c742">illumism::LaserAttack::Process</a></div><div class="ttdeci">void Process(Game &amp;_game)</div><div class="ttdoc">毎フレーム呼ばれる演算処理</div><div class="ttdef"><b>Definition:</b> LaserAttack.cpp:63</div></div>
+<div class="ttc" id="aclassillumism_1_1_laser_attack_html_a1b5a9cfb7056708512b4569b48ecc262"><div class="ttname"><a href="classillumism_1_1_laser_attack.html#a1b5a9cfb7056708512b4569b48ecc262">illumism::LaserAttack::Hit</a></div><div class="ttdeci">void Hit(Game &amp;_game)</div><div class="ttdoc">当たり判定処理</div><div class="ttdef"><b>Definition:</b> LaserAttack.cpp:113</div></div>
+<div class="ttc" id="aclassillumism_1_1_laser_attack_html_a2081e30ae896e3017b3d1b497bb859d9"><div class="ttname"><a href="classillumism_1_1_laser_attack.html#a2081e30ae896e3017b3d1b497bb859d9">illumism::LaserAttack::Damage</a></div><div class="ttdeci">void Damage(Game &amp;_game)</div><div class="ttdoc">プレイヤーに当たるとオブジェクトを削除</div><div class="ttdef"><b>Definition:</b> LaserAttack.cpp:175</div></div>
+<div class="ttc" id="aclassillumism_1_1_laser_attack_html_a5911828678c2550b6721bcef2e4dbf01"><div class="ttname"><a href="classillumism_1_1_laser_attack.html#a5911828678c2550b6721bcef2e4dbf01">illumism::LaserAttack::OffScreen</a></div><div class="ttdeci">void OffScreen(Game &amp;_game)</div><div class="ttdoc">画面外に到達したら削除</div><div class="ttdef"><b>Definition:</b> LaserAttack.cpp:180</div></div>
+<div class="ttc" id="aclassillumism_1_1_laser_attack_html_a5cb993f23bfc0be527455da662452758"><div class="ttname"><a href="classillumism_1_1_laser_attack.html#a5cb993f23bfc0be527455da662452758">illumism::LaserAttack::LaserAttack</a></div><div class="ttdeci">LaserAttack(int _x, int _y, int _taget_x, int _target_y, int _speed)</div><div class="ttdoc">Constructor</div><div class="ttdef"><b>Definition:</b> LaserAttack.cpp:16</div></div>
+<div class="ttc" id="aclassillumism_1_1_laser_attack_html_a63e584b91e113cca49cb213909f007d6"><div class="ttname"><a href="classillumism_1_1_laser_attack.html#a63e584b91e113cca49cb213909f007d6">illumism::LaserAttack::IsHitToCircle</a></div><div class="ttdeci">bool IsHitToCircle(ObjectBase &amp;_object)</div><div class="ttdoc">円と四角の当たり判定処理</div><div class="ttdef"><b>Definition:</b> LaserAttack.cpp:135</div></div>
+<div class="ttc" id="aclassillumism_1_1_laser_attack_html_a813efa6f985835433ec4712dc3d51996"><div class="ttname"><a href="classillumism_1_1_laser_attack.html#a813efa6f985835433ec4712dc3d51996">illumism::LaserAttack::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">初期化処理</div><div class="ttdef"><b>Definition:</b> LaserAttack.cpp:32</div></div>
+<div class="ttc" id="aclassillumism_1_1_laser_attack_html_a86a205f90bfb433d8541b1ae4f1a6d87"><div class="ttname"><a href="classillumism_1_1_laser_attack.html#a86a205f90bfb433d8541b1ae4f1a6d87">illumism::LaserAttack::GetType</a></div><div class="ttdeci">virtual OBJECT_TYPE GetType()</div><div class="ttdoc">オブジェクトの種類を返す</div><div class="ttdef"><b>Definition:</b> LaserAttack.h:45</div></div>
+<div class="ttc" id="aclassillumism_1_1_laser_attack_html_a8a8f9e7ddd58f94fc0447ad9e226f599"><div class="ttname"><a href="classillumism_1_1_laser_attack.html#a8a8f9e7ddd58f94fc0447ad9e226f599">illumism::LaserAttack::Draw</a></div><div class="ttdeci">void Draw(Game &amp;_game) override</div><div class="ttdoc">描画処理</div><div class="ttdef"><b>Definition:</b> LaserAttack.cpp:93</div></div>
+<div class="ttc" id="aclassillumism_1_1_object_base_html"><div class="ttname"><a href="classillumism_1_1_object_base.html">illumism::ObjectBase</a></div><div class="ttdoc">オブジェクトの基底クラス</div><div class="ttdef"><b>Definition:</b> ObjectBase.h:20</div></div>
+<div class="ttc" id="aclassillumism_1_1_object_base_html_a474a7f4347c7057767b376bca2df2a52"><div class="ttname"><a href="classillumism_1_1_object_base.html#a474a7f4347c7057767b376bca2df2a52">illumism::ObjectBase::OBJECT_TYPE</a></div><div class="ttdeci">OBJECT_TYPE</div><div class="ttdoc">オブジェクトの種類用定数</div><div class="ttdef"><b>Definition:</b> ObjectBase.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_laser_attack_8h.html">LaserAttack.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

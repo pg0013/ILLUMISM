@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ILLUMISM: ModeBase.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ILLUMISM
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_mode_base_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ModeBase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mode_base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include    &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>illumism</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">//&lt;二重インクルード防止</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">class </span>ModeServer;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">class </span>Game;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classillumism_1_1_mode_base.html">   22</a></span>&#160;    <span class="keyword">class   </span><a class="code" href="classillumism_1_1_mode_base.html">ModeBase</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classillumism_1_1_mode_base.html">ModeBase</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classillumism_1_1_mode_base.html">ModeBase</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span>    <a class="code" href="classillumism_1_1_mode_base.html#acc8787e57716caf2ca56a036282328d4">Initialize</a>(<a class="code" href="classillumism_1_1_game.html">Game</a>&amp; g);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span>    <a class="code" href="classillumism_1_1_mode_base.html#a7b1e1ab763d8423960e746fd1a2b5853">Terminate</a>(<a class="code" href="classillumism_1_1_game.html">Game</a>&amp; g);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span>    <a class="code" href="classillumism_1_1_mode_base.html#a7f43f31d51f80ef1405c1dbfbd1b6c18">Process</a>(<a class="code" href="classillumism_1_1_game.html">Game</a>&amp; g);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span>    <a class="code" href="classillumism_1_1_mode_base.html#a0d88e00ad294e313234ed84fb5c60906">Draw</a>(<a class="code" href="classillumism_1_1_game.html">Game</a>&amp; g);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classillumism_1_1_mode_base.html#a966ba5313a7aeeaa1ce43e91ff9ef7ee">   81</a></span>&#160;        <span class="keywordtype">int</span>  <a class="code" href="classillumism_1_1_mode_base.html#a966ba5313a7aeeaa1ce43e91ff9ef7ee">GetModeCount</a>() { <span class="keywordflow">return</span> _cntMode; }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classillumism_1_1_mode_base.html#afdbd8d0a8eb237be3b8865ed1f0de007">   90</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classillumism_1_1_mode_base.html#afdbd8d0a8eb237be3b8865ed1f0de007">GetModeTm</a>() { <span class="keywordflow">return</span> _tmMode; }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classillumism_1_1_mode_base.html#ad2661fc890e7898adf85c76c76618773">   99</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classillumism_1_1_mode_base.html#ad2661fc890e7898adf85c76c76618773">GetStepTm</a>() { <span class="keywordflow">return</span> _tmStep; }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classillumism_1_1_mode_base.html#a5e56e80720fdf90a98925f48b8bacc1b">  108</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classillumism_1_1_mode_base.html#a5e56e80720fdf90a98925f48b8bacc1b">SetCallPerFrame</a>(<span class="keywordtype">int</span> frame) { _callPerFrame = _callPerFrame_cnt = frame; }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classillumism_1_1_mode_base.html#a853f5dc5685d5e8ca7e0960c638b0729">  117</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classillumism_1_1_mode_base.html#a853f5dc5685d5e8ca7e0960c638b0729">SetCallOfCount</a>(<span class="keywordtype">int</span> count) { _callOfCount = count; }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">int</span> GetCallPerFrame() { <span class="keywordflow">return</span> _callPerFrame; }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">int</span> GetCallOfCount() { <span class="keywordflow">return</span> _callOfCount; }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">friend</span>  ModeServer; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        std::string     _szName;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordtype">int</span>             _uid;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordtype">int</span>             _layer;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordtype">void</span> StepTime(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> tmNow);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordtype">void</span> StepCount();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordtype">int</span>     _cntMode;   </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>   _tmMode;    </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>   _tmStep;    </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>   _tmModeBase;    </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>   _tmPauseBase;   </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>   _tmPauseStep;   </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>   _tmOldFrame;    </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordtype">int</span>     _callPerFrame, _callPerFrame_cnt;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordtype">int</span>     _callOfCount;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    };</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
+<div class="ttc" id="aclassillumism_1_1_game_html"><div class="ttname"><a href="classillumism_1_1_game.html">illumism::Game</a></div><div class="ttdoc">ゲームシーンクラス</div><div class="ttdef"><b>Definition:</b> Game.h:76</div></div>
+<div class="ttc" id="aclassillumism_1_1_mode_base_html"><div class="ttname"><a href="classillumism_1_1_mode_base.html">illumism::ModeBase</a></div><div class="ttdoc">モードの基底クラス</div><div class="ttdef"><b>Definition:</b> ModeBase.h:23</div></div>
+<div class="ttc" id="aclassillumism_1_1_mode_base_html_a0d88e00ad294e313234ed84fb5c60906"><div class="ttname"><a href="classillumism_1_1_mode_base.html#a0d88e00ad294e313234ed84fb5c60906">illumism::ModeBase::Draw</a></div><div class="ttdeci">virtual bool Draw(Game &amp;g)</div><div class="ttdoc">毎フレーム呼ばれる。描画部を記述</div><div class="ttdef"><b>Definition:</b> ModeBase.cpp:47</div></div>
+<div class="ttc" id="aclassillumism_1_1_mode_base_html_a5e56e80720fdf90a98925f48b8bacc1b"><div class="ttname"><a href="classillumism_1_1_mode_base.html#a5e56e80720fdf90a98925f48b8bacc1b">illumism::ModeBase::SetCallPerFrame</a></div><div class="ttdeci">void SetCallPerFrame(int frame)</div><div class="ttdoc">何フレームに1回Process()を呼ぶか(def:1)</div><div class="ttdef"><b>Definition:</b> ModeBase.h:108</div></div>
+<div class="ttc" id="aclassillumism_1_1_mode_base_html_a7b1e1ab763d8423960e746fd1a2b5853"><div class="ttname"><a href="classillumism_1_1_mode_base.html#a7b1e1ab763d8423960e746fd1a2b5853">illumism::ModeBase::Terminate</a></div><div class="ttdeci">virtual bool Terminate(Game &amp;g)</div><div class="ttdoc">ModeServerから削除される際、一度だけ呼ばれる</div><div class="ttdef"><b>Definition:</b> ModeBase.cpp:37</div></div>
+<div class="ttc" id="aclassillumism_1_1_mode_base_html_a7f43f31d51f80ef1405c1dbfbd1b6c18"><div class="ttname"><a href="classillumism_1_1_mode_base.html#a7f43f31d51f80ef1405c1dbfbd1b6c18">illumism::ModeBase::Process</a></div><div class="ttdeci">virtual bool Process(Game &amp;g)</div><div class="ttdoc">毎フレーム呼ばれる。処理部を記述</div><div class="ttdef"><b>Definition:</b> ModeBase.cpp:42</div></div>
+<div class="ttc" id="aclassillumism_1_1_mode_base_html_a853f5dc5685d5e8ca7e0960c638b0729"><div class="ttname"><a href="classillumism_1_1_mode_base.html#a853f5dc5685d5e8ca7e0960c638b0729">illumism::ModeBase::SetCallOfCount</a></div><div class="ttdeci">void SetCallOfCount(int count)</div><div class="ttdoc">1回の呼び出しに何回Process()を呼ぶか(def:1)</div><div class="ttdef"><b>Definition:</b> ModeBase.h:117</div></div>
+<div class="ttc" id="aclassillumism_1_1_mode_base_html_a966ba5313a7aeeaa1ce43e91ff9ef7ee"><div class="ttname"><a href="classillumism_1_1_mode_base.html#a966ba5313a7aeeaa1ce43e91ff9ef7ee">illumism::ModeBase::GetModeCount</a></div><div class="ttdeci">int GetModeCount()</div><div class="ttdoc">このモードが始まってからのカウンタ</div><div class="ttdef"><b>Definition:</b> ModeBase.h:81</div></div>
+<div class="ttc" id="aclassillumism_1_1_mode_base_html_acc8787e57716caf2ca56a036282328d4"><div class="ttname"><a href="classillumism_1_1_mode_base.html#acc8787e57716caf2ca56a036282328d4">illumism::ModeBase::Initialize</a></div><div class="ttdeci">virtual bool Initialize(Game &amp;g)</div><div class="ttdoc">ModeServerに接続時、Process()の前に一度だけ呼ばれる</div><div class="ttdef"><b>Definition:</b> ModeBase.cpp:32</div></div>
+<div class="ttc" id="aclassillumism_1_1_mode_base_html_ad2661fc890e7898adf85c76c76618773"><div class="ttname"><a href="classillumism_1_1_mode_base.html#ad2661fc890e7898adf85c76c76618773">illumism::ModeBase::GetStepTm</a></div><div class="ttdeci">unsigned long GetStepTm()</div><div class="ttdoc">前フレームからの経過時間ms</div><div class="ttdef"><b>Definition:</b> ModeBase.h:99</div></div>
+<div class="ttc" id="aclassillumism_1_1_mode_base_html_afdbd8d0a8eb237be3b8865ed1f0de007"><div class="ttname"><a href="classillumism_1_1_mode_base.html#afdbd8d0a8eb237be3b8865ed1f0de007">illumism::ModeBase::GetModeTm</a></div><div class="ttdeci">unsigned long GetModeTm()</div><div class="ttdoc">このモードが始まってからの時間ms</div><div class="ttdef"><b>Definition:</b> ModeBase.h:90</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_mode_base_8h.html">ModeBase.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

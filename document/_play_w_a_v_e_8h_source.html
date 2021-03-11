@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ILLUMISM: PlayWAVE.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ILLUMISM
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_play_w_a_v_e_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PlayWAVE.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_play_w_a_v_e_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define XAUDIO2_HELPER_FUNCTIONS</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define _USE_MATH_DEFINES</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&lt;math.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include&lt;ctime&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include&lt;thread&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include&lt;xaudio2.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_my_fade_x_a_p_o_8h.html">MyFadeXAPO.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_my_low_pass_filter_x_a_p_o_8h.html">MyLowPassFilterXAPO.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_my_high_pass_filter_8h.html">MyHighPassFilter.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_my_peak_meter_x_a_p_o_8h.html">MyPeakMeterXAPO.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_resource_server_8h.html">ResourceServer.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>sound</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">namespace</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        constexpr <span class="keywordtype">float</span> PAN_LEFT = -90.0f;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        constexpr <span class="keywordtype">float</span> PAN_RIGHT = 90.0f;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        constexpr <span class="keywordtype">float</span> PAN_CENTER = 0.0f;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classsound_1_1_play_w_a_v_e.html">   38</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classsound_1_1_play_w_a_v_e.html">PlayWAVE</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classsound_1_1_play_w_a_v_e.html">PlayWAVE</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        ~<a class="code" href="classsound_1_1_play_w_a_v_e.html">PlayWAVE</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#ab78292b5dddc41b675222a3ad784c7c6">Init</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#aa30964ce2ec57dc3d5c28c828bf5cdde">Release</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a9f482a609b11ec55c9a87b4db1163874">Load</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* _fileName);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#ab575bfa55680d9e1b5dd19031cf3697d">SetLoopCount</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> _count);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a1de6ad6a348bed580cfbde1e2cc1e578">SetVolume</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _volume);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a8a67371a44a1d6ff21633e73543777f5">SetVolume_dB</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _db);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a6da0a0021f37b1987f319ea1d6c5d680">Pan</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _targetPan);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a6da0a0021f37b1987f319ea1d6c5d680">Pan</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> _pos_x);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#acd21191ae70960268cd16e7946a628fb">Pitch</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _pitch);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a832abb4f1689a888b630df55de9421ab">RandomPitch</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _pitch_diff);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#ad454efb05802deccbb3bca954555fa4c">Pause</a>();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordtype">void</span> ReStart();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a56eebcd5b5c5e44cfb26b7318b0c014b">Fade</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _targetVolume, <span class="keyword">const</span> <span class="keywordtype">float</span> _targetTime);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a467d38cb810876e8ecfa1465dc61a9af">FadeWithEQ</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _targetVolume, <span class="keyword">const</span> <span class="keywordtype">float</span> _targetTime, <span class="keyword">const</span> <span class="keywordtype">float</span> _freqency, <span class="keyword">const</span> <span class="keywordtype">int</span> _typeEQ);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#acf4abf33f06c0d669e646b3ed663a6e5">LowPassFilter</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _freqency);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#aa3a962a88c82ce831c46536286fd4d7d">HighPassFilter</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _freqency);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a3fc5d781327ef55e35b78ba8ba8b3d7f">Play</a>();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a90b2af65a2819cd1799ce5dedd4699f4">PlayWithLoop</a>(<span class="keywordtype">float</span> _loopbegin, <span class="keywordtype">float</span> looplength);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a62e6f0709678ebfc82f9d3800528c1dd">PlayBackGround</a>(<a class="code" href="classsound_1_1_play_w_a_v_e.html">PlayWAVE</a>&amp; _pw);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#ac02a86c881ac9aa63e6d0997248321ad">PlayBackGroundWithLoop</a>(<a class="code" href="classsound_1_1_play_w_a_v_e.html">PlayWAVE</a>&amp; _pw, <span class="keywordtype">float</span> _loopbegin, <span class="keywordtype">float</span> looplength);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a215fe05d84045530c942ed592df1a7c7">Destroy</a>();</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classsound_1_1_play_w_a_v_e.html#a89d0d7a699562600848f069d2e5c3b80">CheckIsRunning</a>();</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keyword">static</span> IXAudio2* m_pXAudio2;    </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keyword">static</span> IXAudio2MasteringVoice* m_pMasteringVoice;   </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keyword">static</span> HRESULT hr;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <a class="code" href="classsound_1_1_w_a_v_e_reader.html">WAVEReader</a> m_WaveReader;    </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        IXAudio2SourceVoice* m_pSourceVoice = <span class="keyword">nullptr</span>;  </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordtype">int</span> m_LoopCount = 0;    </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    };</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
+<div class="ttc" id="a_my_fade_x_a_p_o_8h_html"><div class="ttname"><a href="_my_fade_x_a_p_o_8h.html">MyFadeXAPO.h</a></div><div class="ttdoc">サンプル単位のフェード</div></div>
+<div class="ttc" id="a_my_high_pass_filter_8h_html"><div class="ttname"><a href="_my_high_pass_filter_8h.html">MyHighPassFilter.h</a></div><div class="ttdoc">ハイパスフィルター @detail 遮断周波数の上限がサンプリング周波数の1/2</div></div>
+<div class="ttc" id="a_my_low_pass_filter_x_a_p_o_8h_html"><div class="ttname"><a href="_my_low_pass_filter_x_a_p_o_8h.html">MyLowPassFilterXAPO.h</a></div><div class="ttdoc">ローパスパスフィルター @detail 遮断周波数の上限がサンプリング周波数の1/2</div></div>
+<div class="ttc" id="a_my_peak_meter_x_a_p_o_8h_html"><div class="ttname"><a href="_my_peak_meter_x_a_p_o_8h.html">MyPeakMeterXAPO.h</a></div><div class="ttdoc">全区域ピークメータ</div></div>
+<div class="ttc" id="a_resource_server_8h_html"><div class="ttname"><a href="_resource_server_8h.html">ResourceServer.h</a></div><div class="ttdoc">画像や音声ファイルを補完するリソースサーバのクラス @detail 静的メンバなので、どこでも実行可能</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html">sound::PlayWAVE</a></div><div class="ttdoc">wavファイルの再生</div><div class="ttdef"><b>Definition:</b> PlayWAVE.h:39</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a1de6ad6a348bed580cfbde1e2cc1e578"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a1de6ad6a348bed580cfbde1e2cc1e578">sound::PlayWAVE::SetVolume</a></div><div class="ttdeci">void SetVolume(const float _volume)</div><div class="ttdoc">SourceVoiceの音量を設定</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:70</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a215fe05d84045530c942ed592df1a7c7"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a215fe05d84045530c942ed592df1a7c7">sound::PlayWAVE::Destroy</a></div><div class="ttdeci">void Destroy()</div><div class="ttdoc">ソースボイスの破棄</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:393</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a3fc5d781327ef55e35b78ba8ba8b3d7f"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a3fc5d781327ef55e35b78ba8ba8b3d7f">sound::PlayWAVE::Play</a></div><div class="ttdeci">void Play()</div><div class="ttdoc">WAVEファイルをはじめから再生</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:338</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a467d38cb810876e8ecfa1465dc61a9af"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a467d38cb810876e8ecfa1465dc61a9af">sound::PlayWAVE::FadeWithEQ</a></div><div class="ttdeci">void FadeWithEQ(const float _targetVolume, const float _targetTime, const float _freqency, const int _typeEQ)</div><div class="ttdoc">EQをかけながらフェード処理を行う</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:233</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a56eebcd5b5c5e44cfb26b7318b0c014b"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a56eebcd5b5c5e44cfb26b7318b0c014b">sound::PlayWAVE::Fade</a></div><div class="ttdeci">void Fade(const float _targetVolume, const float _targetTime)</div><div class="ttdoc">フェード処理</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:204</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a62e6f0709678ebfc82f9d3800528c1dd"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a62e6f0709678ebfc82f9d3800528c1dd">sound::PlayWAVE::PlayBackGround</a></div><div class="ttdeci">void PlayBackGround(PlayWAVE &amp;_pw)</div><div class="ttdoc">バックグラウンド再生</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:399</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a6da0a0021f37b1987f319ea1d6c5d680"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a6da0a0021f37b1987f319ea1d6c5d680">sound::PlayWAVE::Pan</a></div><div class="ttdeci">void Pan(const float _targetPan)</div><div class="ttdoc">出力チャンネルの音量バランスの設定 (-90.0f &lt;= _targetPan &lt;= 90.0f) Lのみ→PAN_LEFT　センター→PAN_CENTER　Rのみ→PAN_RIGHT</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:81</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a832abb4f1689a888b630df55de9421ab"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a832abb4f1689a888b630df55de9421ab">sound::PlayWAVE::RandomPitch</a></div><div class="ttdeci">void RandomPitch(const float _pitch_diff)</div><div class="ttdoc">SE用ランダムピッチ設定</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:183</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a89d0d7a699562600848f069d2e5c3b80"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a89d0d7a699562600848f069d2e5c3b80">sound::PlayWAVE::CheckIsRunning</a></div><div class="ttdeci">bool CheckIsRunning()</div><div class="ttdoc">再生中か確認</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:383</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a8a67371a44a1d6ff21633e73543777f5"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a8a67371a44a1d6ff21633e73543777f5">sound::PlayWAVE::SetVolume_dB</a></div><div class="ttdeci">void SetVolume_dB(const float _db)</div><div class="ttdoc">デシベル値でボリュームを設定</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:75</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a90b2af65a2819cd1799ce5dedd4699f4"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a90b2af65a2819cd1799ce5dedd4699f4">sound::PlayWAVE::PlayWithLoop</a></div><div class="ttdeci">void PlayWithLoop(float _loopbegin, float looplength)</div><div class="ttdoc">ループ再選</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:360</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_a9f482a609b11ec55c9a87b4db1163874"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#a9f482a609b11ec55c9a87b4db1163874">sound::PlayWAVE::Load</a></div><div class="ttdeci">void Load(const char *_fileName)</div><div class="ttdoc">wavファイルを読み込み、ソースボイス作成</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:50</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_aa30964ce2ec57dc3d5c28c828bf5cdde"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#aa30964ce2ec57dc3d5c28c828bf5cdde">sound::PlayWAVE::Release</a></div><div class="ttdeci">static void Release()</div><div class="ttdoc">XAudio2の解放処理</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:42</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_aa3a962a88c82ce831c46536286fd4d7d"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#aa3a962a88c82ce831c46536286fd4d7d">sound::PlayWAVE::HighPassFilter</a></div><div class="ttdeci">void HighPassFilter(const float _freqency)</div><div class="ttdoc">ハイパスフィルター</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:316</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_ab575bfa55680d9e1b5dd19031cf3697d"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#ab575bfa55680d9e1b5dd19031cf3697d">sound::PlayWAVE::SetLoopCount</a></div><div class="ttdeci">void SetLoopCount(const int _count)</div><div class="ttdoc">ループ回数を設定</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:65</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_ab78292b5dddc41b675222a3ad784c7c6"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#ab78292b5dddc41b675222a3ad784c7c6">sound::PlayWAVE::Init</a></div><div class="ttdeci">static void Init()</div><div class="ttdoc">XAudio2の初期化処理</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:20</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_ac02a86c881ac9aa63e6d0997248321ad"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#ac02a86c881ac9aa63e6d0997248321ad">sound::PlayWAVE::PlayBackGroundWithLoop</a></div><div class="ttdeci">void PlayBackGroundWithLoop(PlayWAVE &amp;_pw, float _loopbegin, float looplength)</div><div class="ttdoc">バックグラウンドでループ再生</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:405</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_acd21191ae70960268cd16e7946a628fb"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#acd21191ae70960268cd16e7946a628fb">sound::PlayWAVE::Pitch</a></div><div class="ttdeci">void Pitch(const float _pitch)</div><div class="ttdoc">再生速度を設定</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:178</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_acf4abf33f06c0d669e646b3ed663a6e5"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#acf4abf33f06c0d669e646b3ed663a6e5">sound::PlayWAVE::LowPassFilter</a></div><div class="ttdeci">void LowPassFilter(const float _freqency)</div><div class="ttdoc">ローパスフィルター.</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:283</div></div>
+<div class="ttc" id="aclasssound_1_1_play_w_a_v_e_html_ad454efb05802deccbb3bca954555fa4c"><div class="ttname"><a href="classsound_1_1_play_w_a_v_e.html#ad454efb05802deccbb3bca954555fa4c">sound::PlayWAVE::Pause</a></div><div class="ttdeci">void Pause()</div><div class="ttdoc">一時停止</div><div class="ttdef"><b>Definition:</b> PlayWAVE.cpp:191</div></div>
+<div class="ttc" id="aclasssound_1_1_w_a_v_e_reader_html"><div class="ttname"><a href="classsound_1_1_w_a_v_e_reader.html">sound::WAVEReader</a></div><div class="ttdoc">WAVEファイル読み込みクラス</div><div class="ttdef"><b>Definition:</b> WAVEReader.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_play_w_a_v_e_8h.html">PlayWAVE.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

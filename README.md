@@ -3,7 +3,7 @@
 ## 実行ファイル
 [こちら](https://drive.google.com/file/d/14nCrFqxwrAcMxVMUWSh5IjiODYtcoIXo/view?usp=sharing "作品リンク")からダウンロードしてください。 
 ## ジャンル  
-２人プレイのアクションゲーム  
+２人プレイの2Dアクションゲーム  
 ## 開発期間  
 2020/07/28~2020/11/05  
 ## 開発環境

@@ -2,6 +2,8 @@
 ![](http://drive.google.com/uc?export=view&id=1ewWh3ix6uLO5iLhi8lcORozPZPeRuuj-)
 ## 実行ファイル
 [こちら](https://drive.google.com/file/d/14nCrFqxwrAcMxVMUWSh5IjiODYtcoIXo/view?usp=sharing "作品リンク")からダウンロードしてください。 
+## ドキュメント
+doxygenで制作したドキュメントを[こちら](https://120pg0013.web.fc2.com/illumism/index.html "ドキュメントリンク")から閲覧できます。 
 ## ジャンル  
 ２人プレイの2Dアクションゲーム  
 ## 開発期間  

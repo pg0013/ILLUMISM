@@ -21,6 +21,11 @@ doxygenで制作したドキュメントを[こちら](https://120pg0013.web.fc2
 * Windows10
 * DirectX
 * XInput対応コントローラ　2個
+## 開発環境設定  
+VisualStudioでソースコードを閲覧する場合にはDXライブラリを追加する必要があります。  
+[こちら](https://dxlib.xsrv.jp/dxdload.html "DXライブラリのダウンロードリンク")からＤＸライブラリ Windows版 VisualStudio( C++ )用(Ver3.22c)をダウンロードしてください。   
+ 解凍後DxLib_VCというフォルダがあるので`DxLib_VC\プロジェクトに追加すべきファイル_VC用`を、ダウンロードしたソースコードの  
+`ILLUMISM-master\`に配置してください。  
 ## 起動方法  
 exeファイルをダブルクリックでゲームが起動します。  
 ## 終了方法

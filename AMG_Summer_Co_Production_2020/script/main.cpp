@@ -20,7 +20,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//ウィンドウに表示される名前の設定
 	SetMainWindowText("ILLUMISM");
 	//ウィンドウモードの設定
-	ChangeWindowMode(TRUE);
+	ChangeWindowMode(FALSE);
 
 	//画面設定
 	SetGraphMode(illumism::SCREEN_WIDTH, illumism::SCREEN_HEIGHT, illumism::SCREEN_DEPTH);
